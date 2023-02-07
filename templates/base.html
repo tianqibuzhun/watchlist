@@ -5,13 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ user.name }}'s Watchlist</title>
-    <link rel="icon" href="{{ url_for('static', filename='photo.png') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/1.icon') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
     {% endblock %}
 </head>
 <body>
+        <!-- 插入到页面标题上方 -->
+    {% for message in get_flashed_messages() %}
+    <div class="alert">{{ message }}</div>
+    {% endfor %}
+    <h2>...</h2>
     <h2>
-        <img alt="Avatar" class="avatar" src="{{ url_for('static', filename='images/photo.png') }}">
+        <img alt="Avatar" class="avatar" src="{{ url_for('static', filename='images/2.icon') }}">
         {{ user.name }}'s Watchlist
     </h2>
     <nav>
