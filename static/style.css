@@ -38,3 +38,17 @@ footer {
 .movie-list li:hover {
     background-color: #f8f9fa;
 }
+
+.float-right {
+    float: right;
+}
+
+.imdb {
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    background: #F5C518;
+    border-radius: 5px;
+    padding: 3px 5px;
+}
